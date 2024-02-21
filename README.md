@@ -24,6 +24,6 @@ $$
 \sum_{i}^{|N|} log P(label_{i}|S427.01)
 $$
 
-其中|N|表示字符串`label=8.85*55.21+-61.60E`的token个数,$label_{i}$表示`label`字符串中的第i个字符
+其中|N|表示字符串`label=8.85*55.21+-61.60E`的token个数,$label_{i}$表示`label`字符串中的第i个token
 
 reject 回答：None
