@@ -13,3 +13,17 @@ datasets==2.14.5
 trl==0.7.2
 
 视频课程:https://www.bilibili.com/video/BV1Fa4y1X7xh
+
+在model_dpo(训练)上预测产生choice回答的概率和reject回答概率之差 和 model_dpo_ref(不训练)产生choice回答的概率-reject回答概率之差的KL散度 作为loss
+model_dpo(训练)上预测产生choice回答的概率:
+问题：S427.01=
+
+choice 回答：8.85*55.21+-61.60E,计算
+
+$$
+\sum_{|N|} log P(label|S427.01)
+$$
+
+其中|N|表示字符串`label=8.85*55.21+-61.60E`的token个数
+
+reject 回答：None
