@@ -21,9 +21,9 @@ model_dpo(训练)上预测产生choice回答的概率:
 choice 回答：8.85*55.21+-61.60E,计算预测产生choice回答的概率如下
 
 $$
-\sum_{|N|} log P(label|S427.01)
+\sum_{i}^{|N|} log P(label_{i}|S427.01)
 $$
 
-其中|N|表示字符串`label=8.85*55.21+-61.60E`的token个数
+其中|N|表示字符串`label=8.85*55.21+-61.60E`的token个数,$label_{i}$表示`label`字符串中的第i个字符
 
 reject 回答：None
